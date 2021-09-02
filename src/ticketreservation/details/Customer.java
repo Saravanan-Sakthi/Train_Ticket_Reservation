@@ -4,8 +4,6 @@ public class Customer {
     private String name;
     private int age;
     private String gender;
-    private long mobile;
-    private String email;
     private char birthPreference;
     private String ticketStatus;
     private int seatNumber;
@@ -67,19 +65,14 @@ public class Customer {
         this.age = age;
     }
 
-    public long getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(long mobile) {
-        this.mobile = mobile;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    @Override
+    public String toString() {
+        return "\nName : " + name + '\n' +
+                "Age : " + age +'\n'+
+                "Gender :  " + gender + '\n' +
+                "Birth Preference : " + birthPreference +'\n'+
+                "Ticket Status : " + ticketStatus + '\n' +
+                "Seat Number : " + seatNumber +'\n'+
+                "Birth : " + birth +'\n';
     }
 }
